@@ -6,6 +6,6 @@ public class Player_Collect : MonoBehaviour
 
     public void UpdateScore(int value)
     {
-        _scoreData.ScoreValue += Mathf.Clamp(_scoreData.ScoreValue + value, min: 0, max: _scoreData.ScoreValue + value);
+        _scoreData.ScoreValue = Mathf.Clamp(_scoreData.ScoreValue + value, min: 0, max: _scoreData.ScoreValue + value);
     }
 }
